@@ -26,10 +26,10 @@
             
             if (details.style.display === 'none' || details.style.display === '') {
                 details.style.display = 'block';
-                button.textContent = 'Hide Details';
+                button.textContent = '▲';
             } else {
                 details.style.display = 'none';
-                button.textContent = 'Show Details';
+                button.textContent = '▼';
             }
         }
     </script>
@@ -84,7 +84,7 @@
                 <div class="job-period">Oct 2022 – Present</div>
             </div>
             <div class="job-description">
-                <p><strong>Role Overview:</strong> Rejoined Cognizant Japan as a full-time member of the AI & Analytics division in Japan. Frequently assigned as a technical member supporting the sales team during pre-contract discussions and project initiation phases for system development and maintenance engagements.</p>
+                <p><strong>Role Overview:</strong> Rejoined Cognizant Japan as a full-time member of AI&Analytics division in Japan. Frequently assigned as a technical member supporting the sales team during pre-contract discussions and project initiation phases for system development and maintenance engagements.</p>
                 
                 <p><strong>Responsibilities:</strong></p>
                 <ul>
@@ -112,7 +112,7 @@
             <div class="job-period">May 2021 – Oct 2022</div>
         </div>
         <div class="job-description">
-            <p><strong>Role Overview:</strong> Rejoined the AI & Analytics division of Cognizant (Malaysia). Assigned to a U.S.-based pharma company, serving as a senior member responsible for solution design proposals, prototyping systems, and development estimation in projects related to data transformation and analysis across the ASPAC region, including Japan.</p>
+            <p><strong>Role Overview:</strong> Rejoined AI&Analytics division of Cognizant (Malaysia). Assigned to a U.S.-based pharma company, serving as a senior member responsible for solution design proposals, prototyping systems, and development estimation in projects related to data transformation and analysis across the ASPAC region, including Japan.</p>
             
             <p><strong>Responsibilities:</strong></p>
             <ul>
@@ -130,7 +130,8 @@
             <li>Launched a large-scale ETL project as the sole technical member, later leading a team of five business analysts to consolidate technical requirements of over 300 data transformation logics.</li>
             <li>Implemented prototypes and documented them to enhance project transparency.</li>
             <li>Utilized the graph visualization tool Graphviz to map dependencies among numerous jobs in a single graph, which was recognized as a best practice and adopted in other regions.</li>
-            </ul>            
+            </ul>
+            
             <p><strong>Technologies:</strong> Apache Airflow (AWS MWAA), Alteryx, PySpark, Matplotlib, AWS EMR, AWS Glue, Tableau, Git, Graphviz (Mermaid)</p>
         </div>
         </div>
@@ -161,7 +162,7 @@
             <li>Leveraged best practices documented in GitHub and shared resources to accelerate development speed.</li>
             </ul>
             
-            <p><strong>Technologies:</strong> CakePHP, React, Git, Docker, Vagrant, Redmine, JIRA, Treasure Data, Algolia</p>
+            <p><strong>Technologies:</strong> CakePHP, React, Github, Docker, Vagrant, Redmine, JIRA, Treasure Data, Algolia</p>
         </div>
         </div>
 
@@ -174,10 +175,10 @@
             <div class="job-period">May 2018 – July 2019</div>
         </div>
         <div class="job-description">
-            <p><strong>Role Overview:</strong> Worked in AI & Analytics division specializing in data processing, data mart design and development, BI visualization, statistical analysis, and machine learning implementation for clients in the pharma and financial sectors. After completing a one-month internal training program on BI, machine learning, and pharmaceutical data, was assigned on-site at client locations. With a highly multinational environment across both internal teams and clients, English was the primary working language, and reporting lines were mainly to North America and India.</p>
-            
-            <button class="toggle-btn" onclick="toggleDetails('cognizant2018-details')" style="background: #3498db; color: white; border: none; padding: 8px 16px; border-radius: 4px; margin: 10px 0; cursor: pointer;">Show Details</button>
-            
+            <p><strong>Role Overview:</strong> Worked in AI&Analytics division specializing in data processing, data mart design and development, BI visualization, statistical analysis, and machine learning implementation for clients in the pharma and financial sectors. After completing a one-month internal training program on BI, machine learning, and pharmaceutical data, was assigned on-site at client locations. With a highly multinational environment across both internal teams and clients, English was the primary working language, and reporting lines were mainly to North America and India.</p>
+
+            <button class="toggle-btn" onclick="toggleDetails('cognizant2018-details')">▼</button>
+                
             <div id="cognizant2018-details" style="display: none;">
                 <p><strong>Responsibilities:</strong></p>
                 <li> Interpreted system designs from North America and aligned them with Japan-specific data requirements.</li>
@@ -189,57 +190,70 @@
                 <p><strong>Key Achievements:</strong></p>
                 <li> Effectively communicated with diverse teams in a multinational setting using English as the common language; contributed not only as a developer but also as a Scrum Master overseeing project progress.</li>
                 <li> Proactively created prototypes for repetitive data and reporting tasks, then trained the dev team in India to maintain the quality and consistency. This hands-on prototyping approach became a personal strength for driving efficiency in future projects.</li>
-                <p><strong>Technologies:</strong> Tableau, PL/SQL, Python, AWS, Shell, JIRA</p>
+                <p><strong>Technologies:</strong> </strong>Tableau, PL/SQL, Redshift, AWS Lambda, AWS S3, Python, Shell, JIRA</p>
+            </div>
+        </div>
+    </div>
+    <div class="job-entry">
+        <div class="job-header">
+            <div>
+                <div class="company-name">TATA Consultancy Services Japan</div>
+                <div class="job-title">System Engineer</div>
+            </div>
+            <div class="job-period">Apr 2016 – Apr 2018</div>
+        </div>
+        <div class="job-description">
+            <p><strong>Role Overview:</strong> Engaged in the requirement design and development of core enterprise systems for major domestic companies, following a waterfall development approach. Many large-scale projects leveraged a large pool of IT engineers based in Pune, India, a dedicated offshore center for Japanese clients.</p>
+            
+            <button class="toggle-btn" onclick="toggleDetails('tata-details')">▼</button>
+            
+            <div id="tata-details" style="display: none;">
+            <p><strong>Key Responsibilities:</strong></p>
+            <li> Handled end-to-end development from the basic/detailed requirement definition to integration testing for logistics core systems.</lぃ>
+            <li> Acted as the lead of the offshore dev team, providing requirements explanations, coding, code reviews, and code fixes.</li>
+            <li> Created test plans and cases, and developed automated testing using Selenium.</li>
+            
+            <p><strong>Achievements:</strong></p>
+            <li> Selected as the team leader in India, recognized for bilingual ability and expertise gained at graduate school.</li>
+            <li> Gained hands-on experience across the full system development lifecycle, from requirements through integration testing.</li>
+            <li> Bridged Japanese and Indian development teams, building an efficient cross-border collaboration framework.</li>
+            
+            <p><strong>Technologies:</strong> Java Spring Boot, SQL (Oracle), Selenium</p>
+            </div>
+        </div>
+    </div>
+    <div class="job-entry">
+        <div class="job-header">
+            <div>
+                <div class="company-name">Department of World Heritage, Laos</div>
+                <div class="job-title">Researcher (Intern)</div>
+            </div>
+            <div class="job-period">2015 – 2016</div>
+        </div>
+        <div class="job-description">
+            <p><strong>Project Overview:</strong> Assigned to a joint project between the Department of World Heritage in Luang Prabang, Laos, and Tokyo Institute of Technology, aiming to apply IT technologies to world heritage preservation. As a researcher, dispatched to the IT division of the heritage department for 1 year to conduct field studies, implement research plans, and present results in academic papers.</p>
+            
+            <button class="toggle-btn" onclick="toggleDetails('laos-details')">▼</button>
+            
+            <div id="laos-details" style="display: none;">
+            <p><strong>Key Responsibilities:</strong></p>
+            <li> Visualized changes in buildings, forests, and wetland areas from 1995 to 2015 using satellite imagery and GIS.</li>
+            <li> Conducted surveys with wetland landowners, performed statistical analysis using SPSS, and applied PCA for dimensionality reduction and factor analysis.</li>
+            <li> Presented policy proposals based on analysis results to both the university and the World Heritage Department as part of master’s research.</li>
+            
+            <p><strong>Achievements:</strong></p>
+            <li> Developed a hybrid research methodology by integrating insights from over 100 papers on hydrology, landscape conservation, and GIS.</li>
+            <li> Received the Best Presenter Award at a JASID academic conference.</li>
+            <li> Research findings were recognized by the World Heritage Department and used as reference material for future overseas student research.</li>
+            
+            <p><strong>Technologies:</strong> ArcGIS, MySQL, SPSS, Python</p>
             </div>
         </div>
     </div>
 
-        <div class="job-entry">
-            <div class="job-header">
-                <div>
-                    <div class="company-name">TATA コンサルタンシーサービシズ・ジャパン</div>
-                    <div class="job-title">システムエンジニア</div>
-                </div>
-                <div class="job-period">2016年4月 - 2018年4月</div>
-            </div>
-            <div class="job-description">
-                <p><strong>所属概要概要：</strong>国内の大手企業に対して基幹システムの設計、開発、オペレーションをウォーターフォール式に行う。特にインドにある日本企業専用の開発拠点であるプネに所属する大量のITエンジニアを利用し、大規模案件を受けることが多い。</p>
-                <p><strong>担当業務：</strong></p>
-                <p>- 物流系基幹システムの要件定義から統合テストまでの開発業務。</p>
-                <p>- インドチームのリードとして要件説明、コーディング、コードレビュー、コード修正を実施。</p>
-                <p>- テスト計画・テストケースを作成し、Seleniumによるテスト自動化開発も実施。</p>
-                <p><strong>実績・工夫点：</strong></p>
-                <p>- 大学院で培った専門性とバイリンガル能力を評価され、インド現地でチームリーダーとして抜擢。</p>
-                <p>- 要件定義から統合テストまでの全工程を担当し、システム開発の全体像を習得。</p>
-                <p>- 日本とインドの開発チーム間の架け橋となり、効率的な国際開発体制を構築。</p>
-                <p><strong>主な使用技術：</strong>Java Spring Boot、SQL(Oracle)、Selenium</p>
-            </div>
-        </div>
-        <div class="job-entry">
-            <div class="job-header">
-                <div>
-                    <div class="company-name">Department of World Heritage, Laos</div>
-                    <div class="job-title">リサーチャー（インターン）</div>
-                </div>
-                <div class="job-period">2015年 - 2016年</div>
-            </div>
-            <div class="job-description">
-                <p><strong>プロジェクト概要：</strong>世界遺産保全を推進するIT技術の活用を目的としたラオスルアンパバーン世界遺産局と東京工業大学の共同プロジェクト。大学側が技術提案を行った上で研究員もしくは学生を世界遺産局IT支部に派遣し、現地で１年間技術調査の計画・実行・発表までを行い、成果を論文として執筆する。</p>
-                <p><strong>担当業務：</strong></p>
-                <p>- 1995年から2015年の衛星画像を元に、建造物の変化や森林、湿地帯面積の変化をGISで可視化。</p>
-                <p>- 湿地帯の所有者にアンケート調査を行い、収集データをSPSSを用いて統計分析を実施。その中でPCAによる次元削減を行い要因分析を行う。</p>
-                <p>- 分析結果に基づく政策提案を修士研究として大学側、世界遺産局に発表。</p>
-                <p><strong>実績：</strong></p>
-                <p>- 水文学、景観保全、地理情報システムに関連する100以上の論文から知見を統合し、ハイブリッドな研究手法を開発。</p>
-                <p>- JASID主催の学会でベストプレゼンター賞を獲得。</p>
-                <p>- 修士研究の内容が世界遺産局に評価され、海外学生の研究の参考文献として活用。</p>
-                <p><strong>使用技術：</strong>ArcGIS、MySQL、SPSS、Python</p>
-            </div>
-        </div>
-    </div>
 
     <div class="section side-work">
-        <h2>副業・フリーランス経験</h2>
+        <h2>Side Work</h2>
         
         <div class="job-entry side-job">
             <div class="job-header">

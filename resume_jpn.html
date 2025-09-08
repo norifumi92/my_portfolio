@@ -26,10 +26,10 @@
             
             if (details.style.display === 'none' || details.style.display === '') {
                 details.style.display = 'block';
-                button.textContent = '詳細を隠す';
+                button.textContent = '▲';
             } else {
                 details.style.display = 'none';
-                button.textContent = '詳細を表示';
+                button.textContent = '▼';
             }
         }
     </script>
@@ -146,7 +146,7 @@
                 <li>少数精鋭チームで複数案件を並行開発する効率的な体制を構築。</li>
                 <li>日本本社からの要件をマレーシア現地で適切に解釈し、高品質なアプリケーション開発を実現。</li>
                 <li>Githubや共有資料から社内のベストプラクティスを理解・活用し、開発スピードの上昇に貢献。</li>
-                <p><strong>主な使用技術：</strong>CakePHP、React、Git、Docker、Vagrant、Redmine、JIRA、TreasureData、Algolia</p>
+                <p><strong>主な使用技術：</strong>CakePHP、React、Github、Docker、Vagrant、Redmine、JIRA、TreasureData、Algolia</p>
             </div>
         </div>
 
@@ -161,7 +161,7 @@
             <div class="job-description">
                 <p><strong>所属概要：</strong>製薬・金融の業界においてデータの加工、データマートの設計・構築、BIツールによるデータの可視化、統計分析、機械学習の導入を専門とするAI&Analytics部門に所属。社内でBI・機械学習及び製薬業界のデータに関する研修を1ヶ月受けた後クライアント先に常駐し、業務にあたる。社内・クライエント先含め外国人比率が多いため社内の公用語は英語であり、報告先も北米やインドが多い。</p>
                 
-                <button class="toggle-btn" onclick="toggleDetails('cognizant2018-details-jp')" style="background: #3498db; color: white; border: none; padding: 8px 16px; border-radius: 4px; margin: 10px 0; cursor: pointer;">詳細を表示</button>
+                <button class="toggle-btn" onclick="toggleDetails('cognizant2018-details-jp')">▼</button>
                 
                 <div id="cognizant2018-details-jp" style="display: none;">
                     <p><strong>担当業務：</strong></p>
@@ -172,9 +172,9 @@
                     <li> Tableau講師補佐として福岡、広島の営業部署でトレーニングを行う。</li>
                     <li> Python・Shellスクリプトによる定型プロセス（ジョブのトリガー・データの監視等）の自動化。</li>
                     <p><strong>実績・工夫点：</strong></p>
-                    <p>- 多国籍環境下で英語を公用語とした効率的なコミュニケーション体制を構築。開発者としてだけでなくスクラムマスターとしてプロジェクトの進捗管理を行う。</p>
-                    <p>- 似たようなデータセットやレポートを作成するなど量のある作業についてはプロトタイプを自分で構築し、インド開発チームに開発方法を伝授。この経験からプロトタイプを自分で作り開発チームに量をこなしてもらうアプローチを得意とするようになる。</p>
-                    <p><strong>主な使用技術</strong><strong>：</strong>Tableau、PL/SQL、Python、AWS、Shell、JIRA</p>
+                    <li> 多国籍環境下で英語を公用語とした効率的なコミュニケーション体制を構築。開発者としてだけでなくスクラムマスターとしてプロジェクトの進捗管理を行う。</li>
+                    <li> 似たようなデータセットやレポートを作成するなど量のある作業についてはプロトタイプを自分で構築し、インド開発チームに開発方法を伝授。この経験からプロトタイプを自分で作り開発チームに量をこなしてもらうアプローチを得意とするようになる。</li>
+                    <p><strong>主な使用技術：</strong>Tableau, PL/SQL, Redshift, AWS Lambda, AWS S3, Python, Shell, JIRA</p>
                 </div>
             </div>
         </div>
@@ -189,6 +189,10 @@
             </div>
             <div class="job-description">
                 <p><strong>所属概要：</strong>国内の大手企業に対して基幹システムの設計、開発、オペレーションをウォーターフォール式に行う。特にインドにある日本企業専用の開発拠点であるプネに所属する大量のITエンジニアを利用し、大規模案件を受けることが多い。</p>
+                
+                <button class="toggle-btn" onclick="toggleDetails('tata-details-jp')">▼</button>
+                
+                <div id="tata-details-jp" style="display: none;">
                 <p><strong>担当業務：</strong></p>
                 <p>- 物流系基幹システムの要件定義から統合テストまでの開発業務。</p>
                 <p>- インドチームのリードとして要件説明、コーディング、コードレビュー、コード修正を実施。</p>
@@ -198,6 +202,7 @@
                 <p>- 要件定義から統合テストまでの全工程を担当し、システム開発の全体像を習得。</p>
                 <p>- 日本とインドの開発チーム間の架け橋となり、効率的な国際開発体制を構築。</p>
                 <p><strong>主な使用技術：</strong>Java Spring Boot、SQL(Oracle)、Selenium</p>
+                </div>
             </div>
         </div>
         <div class="job-entry">
@@ -210,6 +215,10 @@
             </div>
             <div class="job-description">
                 <p><strong>プロジェクト概要：</strong>世界遺産保全を推進するIT技術の活用を目的としたラオスルアンパバーン世界遺産局と東京工業大学の共同プロジェクト。大学側が技術提案を行った上で研究員もしくは学生を世界遺産局IT支部に派遣し、現地で１年間技術調査の計画・実行・発表までを行い、成果を論文として執筆する。</p>
+                
+                <button class="toggle-btn" onclick="toggleDetails('laos-details-jp')">▼</button>
+                
+                <div id="laos-details-jp" style="display: none;">
                 <p><strong>担当業務：</strong></p>
                 <p>- 1995年から2015年の衛星画像を元に、建造物の変化や森林、湿地帯面積の変化をGISで可視化。</p>
                 <p>- 湿地帯の所有者にアンケート調査を行い、収集データをSPSSを用いて統計分析を実施。その中でPCAによる次元削減を行い要因分析を行う。</p>
@@ -219,6 +228,7 @@
                 <p>- JASID主催の学会でベストプレゼンター賞を獲得。</p>
                 <p>- 修士研究の内容が世界遺産局に評価され、海外学生の研究の参考文献として活用。</p>
                 <p><strong>使用技術：</strong>ArcGIS、MySQL、SPSS、Python</p>
+                </div>
             </div>
         </div>
     </div>
