@@ -233,15 +233,110 @@ body {
     body {
         background: white;
         box-shadow: none;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        line-height: 1.4;
     }
+    
+    .header {
+        background: #2c3e50 !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+    
     .section {
         box-shadow: none;
         border: 1px solid #ddd;
+        margin-bottom: 15px;
+        padding: 15px;
+        page-break-inside: avoid;
     }
+    
+    /* Force page breaks before certain sections */
+    .section.experience {
+        page-break-before: auto;
+    }
+    
+    .section.side-work {
+        page-break-before: auto;
+    }
+    
+    .section.skills {
+        page-break-before: auto;
+    }
+    
+    /* Avoid page breaks inside job entries */
+    .job-entry {
+        page-break-inside: avoid;
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+    
+    /* Hide toggle buttons in print */
+    .toggle-btn {
+        display: none !important;
+    }
+    
+    /* Show all collapsible content in print */
+    div[id$="-details"],
+    div[id$="-details-jp"] {
+        display: block !important;
+    }
+    
     .photo-placeholder {
         border: 2px solid #ccc;
         background: #f8f9fa;
         color: #666;
+    }
+    
+    /* Hide language toggle in print */
+    .language-toggle {
+        display: none;
+    }
+    
+    /* Ensure proper spacing */
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    /* Prevent widows and orphans */
+    p {
+        orphans: 2;
+        widows: 2;
+    }
+    
+    /* Make sure lists stay together */
+    ul, ol {
+        page-break-inside: avoid;
+    }
+    
+    /* Adjust font sizes for print */
+    .header h1 {
+        font-size: 22px;
+    }
+    
+    .section h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .company-name {
+        font-size: 14px;
+    }
+    
+    .job-period {
+        background: #3498db !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .job-period.side {
+        background: #9b59b6 !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
     }
 }
 
