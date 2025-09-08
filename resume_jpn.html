@@ -19,6 +19,19 @@
                 });
             });
         });
+
+        function toggleDetails(detailsId) {
+            const details = document.getElementById(detailsId);
+            const button = document.querySelector(`button[onclick="toggleDetails('${detailsId}')"]`);
+            
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                button.textContent = '詳細を隠す';
+            } else {
+                details.style.display = 'none';
+                button.textContent = '詳細を表示';
+            }
+        }
     </script>
     <div class="header">
         <div class="header-left">
@@ -147,16 +160,22 @@
             </div>
             <div class="job-description">
                 <p><strong>所属概要：</strong>製薬・金融の業界においてデータの加工、データマートの設計・構築、BIツールによるデータの可視化、統計分析、機械学習の導入を専門とするAI&Analytics部門に所属。社内でBI・機械学習及び製薬業界のデータに関する研修を1ヶ月受けた後クライアント先に常駐し、業務にあたる。社内・クライエント先含め外国人比率が多いため社内の公用語は英語であり、報告先も北米やインドが多い。</p>
-                <p><strong>担当業務：</strong></p>
-                <p>- 製薬業界データのETL処理の要件定義から実装。</p>
-                <p>- TableauでのBIレポート構築。</p>
-                <p>- Python・Shellスクリプトによるデータ更新プロセスの自動化。</p>
-                <p>- 北米チームからのシステム設計を理解し日本側のデータ要件を調整。</p>
-                <p>- インド開発チームの管理とプロジェクト進行。</p><p>- Tableau講師補佐として福岡、広島の営業部署でトレーニングを行う。</p>
-                <p><strong>実績・工夫点：</strong></p>
-                <p>- 多国籍環境下で英語を公用語とした効率的なコミュニケーション体制を構築。開発者としてだけでなくスクラムマスターとしてプロジェクトの進捗管理を行う。</p>
-                <p>- 似たようなデータセットやレポートを作成するなど量のある作業についてはプロトタイプを自分で構築し、インド開発チームに開発方法を伝授。この経験からプロトタイプを自分で作り開発チームに量をこなしてもらうアプローチを得意とするようになる。</p>
-                <p><strong>主な使用技術</strong><strong>：</strong>Tableau、PL/SQL、Python、AWS、Shell、JIRA</p>
+                
+                <button class="toggle-btn" onclick="toggleDetails('cognizant2018-details-jp')" style="background: #3498db; color: white; border: none; padding: 8px 16px; border-radius: 4px; margin: 10px 0; cursor: pointer;">詳細を表示</button>
+                
+                <div id="cognizant2018-details-jp" style="display: none;">
+                    <p><strong>担当業務：</strong></p>
+                    <li> 北米チームからのシステム設計を理解し日本側のデータ要件を調整。</li>
+                    <li> 製薬業界データのETL処理の要件定義から実装。</li>
+                    <li> Tableauを使った100近くのBIレポートの開発。</li>
+                    <li> インド開発チームの管理とプロジェクト進行。</li>
+                    <li> Tableau講師補佐として福岡、広島の営業部署でトレーニングを行う。</li>
+                    <li> Python・Shellスクリプトによる定型プロセス（ジョブのトリガー・データの監視等）の自動化。</li>
+                    <p><strong>実績・工夫点：</strong></p>
+                    <p>- 多国籍環境下で英語を公用語とした効率的なコミュニケーション体制を構築。開発者としてだけでなくスクラムマスターとしてプロジェクトの進捗管理を行う。</p>
+                    <p>- 似たようなデータセットやレポートを作成するなど量のある作業についてはプロトタイプを自分で構築し、インド開発チームに開発方法を伝授。この経験からプロトタイプを自分で作り開発チームに量をこなしてもらうアプローチを得意とするようになる。</p>
+                    <p><strong>主な使用技術</strong><strong>：</strong>Tableau、PL/SQL、Python、AWS、Shell、JIRA</p>
+                </div>
             </div>
         </div>
 

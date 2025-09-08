@@ -19,6 +19,19 @@
                 });
             });
         });
+
+        function toggleDetails(detailsId) {
+            const details = document.getElementById(detailsId);
+            const button = document.querySelector(`button[onclick="toggleDetails('${detailsId}')"]`);
+            
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                button.textContent = 'Hide Details';
+            } else {
+                details.style.display = 'none';
+                button.textContent = 'Show Details';
+            }
+        }
     </script>
     <div class="header">
         <div class="header-left">
@@ -86,7 +99,7 @@
                 <li>Introduced Collibra, a global tool for data quality checks and metadata cataloging, into the Japanese operations of a U.S.-based pharma company.</li>
                 </ul>
                 
-                <p><strong>Key Technologies:</strong> Collibra Data Catalog, Collibra DQ, Databricks, Generative AI (Synthesized), Tricentis, Python, Redshift</p>
+                <p><strong>Technologies:</strong> Collibra Data Catalog, Collibra DQ, Databricks, Generative AI (Synthesized), Tricentis, Python, Redshift</p>
             </div>
         </div>
 
@@ -117,9 +130,8 @@
             <li>Launched a large-scale ETL project as the sole technical member, later leading a team of five business analysts to consolidate technical requirements of over 300 data transformation logics.</li>
             <li>Implemented prototypes and documented them to enhance project transparency.</li>
             <li>Utilized the graph visualization tool Graphviz to map dependencies among numerous jobs in a single graph, which was recognized as a best practice and adopted in other regions.</li>
-            </ul>
-            
-            <p><strong>Key Technologies:</strong> Apache Airflow (AWS MWAA), Alteryx, PySpark, Matplotlib, AWS EMR, AWS Glue, Tableau, Git, Graphviz (Mermaid)</p>
+            </ul>            
+            <p><strong>Technologies:</strong> Apache Airflow (AWS MWAA), Alteryx, PySpark, Matplotlib, AWS EMR, AWS Glue, Tableau, Git, Graphviz (Mermaid)</p>
         </div>
         </div>
 
@@ -149,32 +161,38 @@
             <li>Leveraged best practices documented in GitHub and shared resources to accelerate development speed.</li>
             </ul>
             
-            <p><strong>Key Technologies:</strong> CakePHP, React, Git, Docker, Vagrant, Redmine, JIRA, Treasure Data, Algolia</p>
+            <p><strong>Technologies:</strong> CakePHP, React, Git, Docker, Vagrant, Redmine, JIRA, Treasure Data, Algolia</p>
         </div>
         </div>
 
-        <div class="job-entry">
-            <div class="job-header">
-                <div>
-                    <div class="company-name">コグニザント・ジャパン</div>
-                    <div class="job-title">データエンジニア</div>
-                </div>
-                <div class="job-period">2018年5月 - 2019年7月</div>
+    <div class="job-entry">
+        <div class="job-header">
+            <div>
+                <div class="company-name">Cognizant Japan</div>
+                <div class="job-title">Data Engineer</div>
             </div>
-            <div class="job-description">
-                <p><strong>所属概要：</strong>製薬・金融の業界においてデータの加工、データマートの設計・構築、BIツールによるデータの可視化、統計分析、機械学習の導入を専門とするAI&Analytics部門に所属。社内でBI・機械学習及び製薬業界のデータに関する研修を1ヶ月受けた後クライアント先に常駐し、業務にあたる。社内・クライエント先含め外国人比率が多いため社内の公用語は英語であり、報告先も北米やインドが多い。</p>
-                <p><strong>担当業務：</strong></p>
-                <p>- 製薬業界データのETL処理の要件定義から実装。</p>
-                <p>- TableauでのBIレポート構築。</p>
-                <p>- Python・Shellスクリプトによるデータ更新プロセスの自動化。</p>
-                <p>- 北米チームからのシステム設計を理解し日本側のデータ要件を調整。</p>
-                <p>- インド開発チームの管理とプロジェクト進行。</p><p>- Tableau講師補佐として福岡、広島の営業部署でトレーニングを行う。</p>
-                <p><strong>実績・工夫点：</strong></p>
-                <p>- 多国籍環境下で英語を公用語とした効率的なコミュニケーション体制を構築。開発者としてだけでなくスクラムマスターとしてプロジェクトの進捗管理を行う。</p>
-                <p>- 似たようなデータセットやレポートを作成するなど量のある作業についてはプロトタイプを自分で構築し、インド開発チームに開発方法を伝授。この経験からプロトタイプを自分で作り開発チームに量をこなしてもらうアプローチを得意とするようになる。</p>
-                <p><strong>主な使用技術</strong><strong>：</strong>Tableau、PL/SQL、Python、AWS、Shell、JIRA</p>
+            <div class="job-period">May 2018 – July 2019</div>
+        </div>
+        <div class="job-description">
+            <p><strong>Role Overview:</strong> Worked in AI & Analytics division specializing in data processing, data mart design and development, BI visualization, statistical analysis, and machine learning implementation for clients in the pharma and financial sectors. After completing a one-month internal training program on BI, machine learning, and pharmaceutical data, was assigned on-site at client locations. With a highly multinational environment across both internal teams and clients, English was the primary working language, and reporting lines were mainly to North America and India.</p>
+            
+            <button class="toggle-btn" onclick="toggleDetails('cognizant2018-details')" style="background: #3498db; color: white; border: none; padding: 8px 16px; border-radius: 4px; margin: 10px 0; cursor: pointer;">Show Details</button>
+            
+            <div id="cognizant2018-details" style="display: none;">
+                <p><strong>Responsibilities:</strong></p>
+                <li> Interpreted system designs from North America and aligned them with Japan-specific data requirements.</li>
+                <li> Defined requirements and implemented ETL processes for pharmaceutical data.</li>
+                <li> Built approximately 100 BI reports using Tableau.</li>
+                <li> Managed the offshore development team in India and oversaw/reported project progress.</li>
+                <li> Supported Tableau training sessions for sales departments in Fukuoka and Hiroshima as an assistant instructor.</li>
+                <li> Automated routine processes (i.e. job triggering, data quality monitoring, etc) with Python and Shell scripts.</li>
+                <p><strong>Key Achievements:</strong></p>
+                <li> Effectively communicated with diverse teams in a multinational setting using English as the common language; contributed not only as a developer but also as a Scrum Master overseeing project progress.</li>
+                <li> Proactively created prototypes for repetitive data and reporting tasks, then trained the dev team in India to maintain the quality and consistency. This hands-on prototyping approach became a personal strength for driving efficiency in future projects.</li>
+                <p><strong>Technologies:</strong> Tableau, PL/SQL, Python, AWS, Shell, JIRA</p>
             </div>
         </div>
+    </div>
 
         <div class="job-entry">
             <div class="job-header">
