@@ -93,6 +93,8 @@ body {
 .info-item {
     display: flex;
     align-items: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .info-label {
@@ -203,6 +205,11 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 16px;
+        margin: 0;
+    }
+
     .header {
         flex-direction: column;
         text-align: center;
@@ -226,6 +233,145 @@ body {
     .header h1 {
         text-align: center;
         font-size: 24px;
+    }
+
+    .section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .basic-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .info-item span:not(.info-label) {
+        word-break: break-all;
+        max-width: 100%;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .job-period {
+        align-self: flex-start;
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .language-toggle {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .header-name {
+        font-size: 16px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .company-name {
+        font-size: 16px;
+    }
+
+    .job-title {
+        font-size: 14px;
+    }
+
+    .info-label {
+        min-width: 60px;
+        font-size: 14px;
+    }
+
+    .toggle-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .header {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .section {
+        padding: 16px;
+    }
+
+    .job-entry {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .header-name {
+        font-size: 14px;
+    }
+
+    .section h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .company-name {
+        font-size: 15px;
+    }
+
+    .job-title {
+        font-size: 13px;
+    }
+
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+
+    .skills-grid .skill-category {
+        padding: 12px;
+    }
+
+    .skill-category h3 {
+        font-size: 15px;
     }
 }
 
